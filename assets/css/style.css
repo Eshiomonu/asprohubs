@@ -1,0 +1,501 @@
+/* =========================================
+   ASPROHUBS - GLOBAL STYLESHEET
+   Brand Color: Purple Corporate
+   File: assets/css/style.css
+========================================= */
+
+:root {
+    /* Brand Colors */
+    --aspro-primary: #5B2EED;
+    --aspro-primary-dark: #4A21C9;
+    --aspro-primary-light: #E9E2FF;
+
+    /* Accent */
+    --aspro-accent-blue: #2D9CDB;
+
+    /* Utility Colors */
+    --aspro-success: #27AE60;
+    --aspro-warning: #F2C94C;
+    --aspro-danger: #EB5757;
+
+    /* Neutrals */
+    --aspro-dark: #1B1D24;
+    --aspro-grey: #7E8299;
+    --aspro-border: #E1E5EB;
+    --aspro-light: #F8F9FC;
+    --aspro-white: #FFFFFF;
+
+    /* Typography */
+    --aspro-font: "Inter", sans-serif;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--aspro-font);
+    background-color: var(--aspro-light);
+    color: var(--aspro-dark);
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   Typography
+------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+p {
+    font-size: 16px;
+    color: var(--aspro-grey);
+}
+
+a {
+    color: var(--aspro-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--aspro-primary-dark);
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar-aspro {
+    background: var(--aspro-white);
+    padding: 12px 0;
+}
+
+.navbar-aspro .nav-link {
+    font-weight: 500;
+    margin-right: 18px;
+    padding: 8px 5px;
+}
+
+.navbar-aspro .nav-link.active {
+    color: var(--aspro-primary) !important;
+    border-bottom: 2px solid var(--aspro-primary);
+}
+
+.navbar-aspro .navbar-toggler {
+    border: none;
+}
+
+.navbar-aspro .dropdown-menu {
+    border-radius: 10px;
+}
+
+/* LIGHT MODE */
+body.aspro-light {
+    background: var(--aspro-light);
+    color: var(--aspro-dark);
+}
+body.aspro-light .navbar-aspro {
+    background: #FFFFFF;
+}
+
+/* DARK MODE
+body.aspro-dark {
+    background: #0f0f12;
+    color: #f1f1f1;
+}
+body.aspro-dark .navbar-aspro {
+    background: #15151a;
+}
+body.aspro-dark .nav-link {
+    color: #eee !important;
+}
+body.aspro-dark .nav-link.active {
+    color: var(--aspro-primary) !important;
+}
+body.aspro-dark .dropdown-menu {
+    background: #1f1f26;
+    color: #fff;
+} */
+
+
+/* ------------------------------
+   Sections
+------------------------------ */
+.section-light {
+    background: var(--aspro-light);
+    padding: 80px 0;
+}
+
+.section-dark {
+    background: var(--aspro-dark);
+    color: var(--aspro-white);
+    padding: 80px 0;
+}
+
+
+/* -----------------------------------------
+   AUTH PAGES (Login & Register)
+------------------------------------------ */
+.auth-section {
+    padding: 80px 0;
+}
+
+.auth-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.auth-image {
+    background: var(--aspro-primary-dark);
+}
+
+.auth-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.auth-form {
+    background: #fff;
+}
+
+.auth-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--aspro-dark);
+}
+
+.auth-subtitle {
+    font-size: 15px;
+    color: var(--aspro-grey);
+}
+
+/* Login box */
+.auth-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Inputs */
+.auth-section .form-control {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--aspro-border);
+}
+auth-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.auth-section a {
+    color: var(--aspro-primary);
+    font-weight: 500;
+}
+
+/* Google button */
+.google-btn {
+    background: #fff;
+    border: 1px solid var(--aspro-border);
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-btn img {
+    width: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .auth-section {
+        padding: 40px 0;
+    }
+}
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+.btn-aspro {
+    background: #5B2EED;
+    border-color: var(--aspro-primary);
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--aspro-white);
+    font-weight: 600;
+    letter-spacing: .3px;
+    transition: .3s ease;
+}
+.btn-aspro:hover {
+    background: var(--aspro-primary-dark);
+    border-color: var(--aspro-primary-dark);
+    color: #fff;
+}
+
+.btn-aspro-outline {
+    background: transparent;
+    border: 2px solid var(--aspro-primary);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--aspro-primary);
+    transition: .3s;
+}
+.btn-aspro-outline:hover {
+    background: var(--aspro-primary);
+    color: white;
+}
+
+.btn-aspro-light {
+    background: var(--aspro-primary-light);
+    border: none;
+    color: var(--aspro-primary);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.aspro-hero {
+    position: relative;
+    width: 100%;
+    padding: 140px 0;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aspro-hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(27, 29, 36, 0.60); 
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.aspro-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--aspro-white);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #e4e4e4;
+    max-width: 650px;
+    margin: 20px auto 0;
+}
+
+/* CTA button adjustments */
+.hero-buttons .btn {
+    font-size: 16px;
+    padding: 14px 28px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 34px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .aspro-hero {
+        padding: 100px 0;
+    }
+}
+
+/* HERO - DARK MODE */
+body.aspro-dark .aspro-hero::after {
+    background: rgba(0, 0, 0, 0.70);
+}
+
+body.aspro-dark .hero-title {
+    color: #fff;
+}
+
+body.aspro-dark .hero-subtitle {
+    color: #dcdcdc;
+}
+
+
+/* ------------------------------
+   Cards (Course Cards)
+------------------------------ */
+.course-card {
+    border: 1px solid var(--aspro-border);
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+    transition: .3s;
+}
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card-body {
+    padding: 20px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.aspro-footer {
+    background: var(--footer-bg);
+    color: var(--text-secondary);
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: var(--aspro-primary);
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.social-icons a {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    color: var(--text-secondary);
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    color: var(--aspro-primary);
+}
+
+.footer-divider {
+    border-color: var(--border-color);
+}
+
+.newsletter-form input {
+    border-radius: 6px 0 0 6px;
+}
+
+.newsletter-form .btn-aspro {
+    border-radius: 0 6px 6px 0;
+}
+
+
+/* Certification Cards Modern Style */
+.cert-card {
+    background: var(--aspro-light);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.cert-card:hover {
+    background: linear-gradient(135deg, var(--aspro-primary), var(--aspro-primary-dark));
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Contact Section */
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid var(--aspro-border);
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--aspro-primary);
+    box-shadow: 0 0 10px rgba(91,46,237,0.2);
+    outline: none;
+}
+
+.contact-form .btn-aspro {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form .btn-aspro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(91,46,237,0.2);
+}
+
+/* Info Cards */
+.card-body .rounded-circle i {
+    transition: transform 0.3s;
+}
+
+.card-body .rounded-circle:hover i {
+    transform: scale(1.2);
+}
+
+
+/* ------------------------------
+   Utility Spacing
+------------------------------ */
+.mt-6 { margin-top: 6rem; }
+.mt-7 { margin-top: 7rem; }
+.mt-8 { margin-top: 8rem; }
+
+.pb-6 { padding-bottom: 6rem; }
+.pb-7 { padding-bottom: 7rem; }
+.pb-8 { padding-bottom: 8rem; }
