@@ -494,7 +494,9 @@ body.aspro-dark .hero-subtitle {
     color: var(--aspro-muted);
 }
 
-
+.courses-page-card {
+    background: #5B2EED;
+}
 
 
 /* ------------------------------

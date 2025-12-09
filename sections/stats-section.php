@@ -7,27 +7,6 @@ $stats = [
     ["icon" => "bi-graph-up-arrow", "value" => "95%", "label" => "Satisfaction Rate"],
 ];
 
-// Core Values
-$values = [
-    [
-        "icon" => "bi-bullseye",
-        "title" => "Excellence in Education",
-        "description" => "We provide top-tier professional training aligned with global standards."
-    ],
-    [
-        "icon" => "bi-shield-check",
-        "title" => "Proven Track Record",
-        "description" => "Thousands of successful professionals trust our certification programs."
-    ],
-    [
-        "icon" => "bi-people",
-        "title" => "Student-Centered Approach",
-        "description" => "We ensure flexible learning and strong academic support for all students."
-    ],
-];
-
-// Certifications
-$certs = ["PMP","CBAP","ITIL","RMP","PSM","Data Analysis","MS Project","Primavera P6"];
 ?>
 
 <!-- STATS SECTION -->
