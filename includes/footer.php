@@ -87,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script src="<?php echo BASE_URL; ?>/assets/js/main.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
