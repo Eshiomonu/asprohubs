@@ -341,37 +341,112 @@ body.aspro-dark .hero-subtitle {
     color: #dcdcdc;
 }
 
+/* ----------------------------------------------
+   ASPRO NEW COURSE CARD (Refactored 2025)
+---------------------------------------------- */
 
-/* ------------------------------
-   Cards (Course Cards)
------------------------------- */
-.course-card {
+.aspro-course-card {
     border: 1px solid var(--aspro-border);
-    border-radius: 12px;
-    background: #fff;
+    border-radius: 14px;
+    background: var(--aspro-white);
     overflow: hidden;
-    transition: .3s;
+    transition: transform .3s, box-shadow .3s;
 }
-.course-card:hover {
+
+.aspro-course-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.course-card img {
+.aspro-course-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
-.course-card-body {
-    padding: 20px;
+/* Category badge using brand color */
+.bg-aspro-primary {
+    background: var(--aspro-primary) !important;
 }
 
-.course-title {
-    font-size: 20px;
+/* Title */
+.aspro-course-card .course-title {
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    color: var(--aspro-dark);
 }
+
+/* Rating stars */
+.aspro-rating {
+    font-size: 14px;
+}
+
+/* Price color */
+.text-aspro-primary {
+    color: var(--aspro-primary) !important;
+}
+
+/* Button override for small version */
+.btn-aspro.btn-sm {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+
+/* ------------------------------------------------
+   Choose Your Learning Path Section
+--------------------------------------------------- */
+
+.learning-path-card {
+    background: var(--aspro-white);
+    border: 1px solid var(--aspro-border);
+    border-radius: 16px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.learning-path-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Icons */
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: var(--aspro-light);
+    color: var(--aspro-primary);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+/* Feature list */
+.aspro-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.aspro-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--aspro-dark);
+}
+
+.aspro-list li::before {
+    content: "✔";
+    color: var(--aspro-primary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
 
 /* ------------------------------
    Footer

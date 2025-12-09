@@ -4,12 +4,11 @@
             <div class="col-lg-8">
 
                 <h1 class="hero-title">
-                    Learn High-Demand Skills & Build Your Future
+                    Master Professional Certifications
                 </h1>
 
                 <p class="hero-subtitle">
-                    AsproHubs provides professional, corporate-grade courses designed to
-                    accelerate your career and empower your professional growth.
+                   Expert-led training and comprehensive self-paced courses for PMP,CBAP, ITIL, and more.
                 </p>
 
                 <div class="hero-buttons mt-4">

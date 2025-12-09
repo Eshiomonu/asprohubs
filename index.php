@@ -9,6 +9,7 @@ $isAuthenticated = false; // or from session
 <!-- Hero Section -->
 <?php include __DIR__ . '/sections/hero.php'; ?>
 <?php include __DIR__ . '/sections/featured-courses.php'; ?>
+<?php include __DIR__ . '/sections/learning-path.php'; ?>
 
 <!-- Other homepage sections can follow here -->
 
